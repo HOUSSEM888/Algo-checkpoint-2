@@ -1,0 +1,27 @@
+
+ALGORITHM InsertionSort(arr:Array of integers)
+VAR
+    n ← length(arr)
+     current ← arr[i]
+        j ← i - 1
+BEGIN
+
+  For i from 1 to n-1 do
+        // Sélectionne l'élément à insérer dans la séquence triée
+       
+        // Shift elements of arr[0..i-1], that are greater than current, to one position ahead of their current position
+        While j >= 0 and arr[j] > current do
+            arr[j + 1] ← arr[j]
+            j ← j - 1
+        End While
+        // Insert the current element into its correct position in sorted order
+        arr[j + 1] ← current
+
+
+    End For
+
+    END
+
+
+    
+  
